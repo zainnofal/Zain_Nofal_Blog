@@ -1,0 +1,17 @@
+---
+title: "Zain Nofal"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/zainnofal/
+    - icon: github
+      text: Github
+      href: https://github.com/zainnofal
+
+---
+
+I am a Master of Data Science student at the University of British Columbia with a strong interest in artificial intelligence and data science applications. I am particularly interested in how data-driven methods can be used to support decision making across domains such as finance, healthcare, and technology. Through this blog, I share explanations, personal experiences, and reflections on data science concepts, models, and real-world applications as I continue developing my skills in the field.
+
