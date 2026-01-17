@@ -40,73 +40,62 @@ pre {
   border-radius: 14px;
 }
 
-/* Listing cards */
+/* Listing cards: portrait, modern */
 .quarto-listing .card {
+  width: 340px;
+  max-width: 340px;
+  height: 460px;              /* taller than wide */
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   overflow: hidden;
-}
 
-.quarto-listing .card .card-body {
-  padding: 1.2rem 1.2rem 1rem 1.2rem;
-}
-
-/* Reduce title-block vertical space */
-.quarto-title-block {
-  padding-bottom: 0.75rem;
-}
-
-
-/* Limit listing card text height */
-.quarto-listing .card-text {
-  max-height: 5.5em;
-  overflow: hidden;
-}
-
-/* Slightly tighter spacing inside cards */
-.quarto-listing .card-body {
-  padding: 1rem 1rem 0.9rem 1rem;
-}
-
-
-/* Make listing cards more square and consistent */
-.quarto-listing .card {
-  max-width: 360px;          /* controls card width */
-  height: 520px;             /* controls card height; adjust 480–560 */
   display: flex;
   flex-direction: column;
 }
 
-/* Cover image area: fixed height, cropped nicely */
+
+/* Cover image: compact but present */
 .quarto-listing .card-img-top,
 .quarto-listing img.card-img-top {
-  height: 190px;             /* adjust 170–220 */
+  height: 170px;
   width: 100%;
   object-fit: cover;
 }
 
-/* Keep body compact */
+
+/* Body layout */
 .quarto-listing .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem 0.75rem 1rem;
+  padding: 1rem;
 }
 
-/* Clamp title to 3 lines */
+/* Title clamp */
 .quarto-listing .card-title {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-bottom: 0.4rem;
 }
 
-/* Clamp description to 3 lines */
+
+/* Description clamp */
 .quarto-listing .card-text {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: auto;
+}
+/* Grid respects card width */
+.quarto-listing-container-grid {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+/* Reduce title-block vertical space */
+.quarto-title-block {
+  padding-bottom: 0.75rem;
 }
