@@ -42,6 +42,13 @@
     "text": "Modern Approach: Long Short Term Memory Networks\nLong Short Term Memory networks, also referred to as LSTMS, are neural networks designed to work with sequential data. Unlike other models that rely on fixed assumptions about their relationships in the data, LSTMs learn patterns directly from historical sequences. They are capable of capturing events that occurred far in the past when they are making their predictions.\nFrom an abstract level, LSTMs attempt to learn which past information is important and which information can be ignored. This makes them well suitable for noisy and complex data such as the financial time series data in our case. LSTMs can model nonlinear relationships and can adapt to the changing patterns that occur.\nHowever, even LSTMs come with some trade offs. They require larger datasets, more computational power, and are harder to interpret. For someone without a technical background, understanding how an LSTM works can be challenging."
   },
   {
+    "objectID": "posts/My_Blog/index.html#comparing-arima-and-lstm-for-financial-forecasting",
+    "href": "posts/My_Blog/index.html#comparing-arima-and-lstm-for-financial-forecasting",
+    "title": "Forecasting Stock Market Trends with Historical Data Using Data Science Models",
+    "section": "Comparing ARIMA and LSTM for Financial Forecasting",
+    "text": "Comparing ARIMA and LSTM for Financial Forecasting\nARIMA and LSTM represent two different approaches in time series forecasting. ARIMA relies on the statistical structure and assumptions that are predefined, while LSTMs learn patterns directly from the data.\nARIMA models are easier to interpret and require less data which makes them suitable for simpler forecasting tasks or where explainability is important. On the other hand, LSTMs offer more flexibility and can capture more complex patterns, but at the cost of transparency and computational efficiency.\nThe choice between LSTMs and ARIMA depends on the nature of the data and the final goals of the analysis. In real world applications, analysts usually experiment with multiple models to understand their strengths and weaknesses before selecting one.\n\nFigure 3: Conceptual comparison between ARIMA and LSTM models for financial time series forecasting."
+  },
+  {
     "objectID": "posts/My_Blog/index.html#evaluating-forecasts",
     "href": "posts/My_Blog/index.html#evaluating-forecasts",
     "title": "Forecasting Stock Market Trends with Historical Data Using Data Science Models",
@@ -68,12 +75,5 @@
     "title": "Posts",
     "section": "",
     "text": "Forecasting Stock Market Trends with Historical Data Using Data Science Models\n\n\nAn accessible introduction to time series forecasting in financial markets, with a high-level comparison of ARIMA and LSTM models.\n\n\n\nZain Nofal\n\n\nJan 14, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/My_Blog/index.html#comparing-arima-and-lstm-for-financial-forecasting",
-    "href": "posts/My_Blog/index.html#comparing-arima-and-lstm-for-financial-forecasting",
-    "title": "Forecasting Stock Market Trends with Historical Data Using Data Science Models",
-    "section": "Comparing ARIMA and LSTM for Financial Forecasting",
-    "text": "Comparing ARIMA and LSTM for Financial Forecasting\nARIMA and LSTM represent two different approaches in time series forecasting. ARIMA relies on the statistical structure and assumptions that are predefined, while LSTMs learn patterns directly from the data.\nARIMA models are easier to interpret and require less data which makes them suitable for simpler forecasting tasks or where explainability is important. On the other hand, LSTMs offer more flexibility and can capture more complex patterns, but at the cost of transparency and computational efficiency.\nThe choice between LSTMs and ARIMA depends on the nature of the data and the final goals of the analysis. In real world applications, analysts usually experiment with multiple models to understand their strengths and weaknesses before selecting one.\n\nFigure 3: Conceptual comparison between ARIMA and LSTM models for financial time series forecasting."
   }
 ]
