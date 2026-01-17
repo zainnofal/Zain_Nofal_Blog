@@ -8,6 +8,7 @@
 
 <meta name="author" content="Zain Nofal">
 <meta name="dcterms.date" content="2026-01-14">
+<meta name="description" content="An accessible introduction to time series forecasting in financial markets, with a high-level comparison of ARIMA and LSTM models.">
 
 <title>Forecasting Stock Market Trends with Historical Data Using Data Science Models – Zain Nofal | Data Science Blog</title>
 <style>
@@ -38,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6964cec736b65266f614e8c6f7b9f238.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-9d882aefbe6880e209bb4e231fcedeb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -90,18 +92,24 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">Zain Nofal</span></a>
+<span class="menu-text">About</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/zainnofal"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/zainnofal/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -117,7 +125,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Forecasting Stock Market Trends with Historical Data Using Data Science Models</h1>
-                                <div class="quarto-categories">
+                  <div>
+        <div class="description">
+          An accessible introduction to time series forecasting in financial markets, with a high-level comparison of ARIMA and LSTM models.
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">Explanations</div>
                 <div class="quarto-category">Comparisons</div>
               </div>
@@ -157,7 +170,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="image.jpg" class="img-fluid"></p>
-<p><em>This post introduces time series forecasting in financial markets for readers with little prior background in data science. It explains how historical market data can be used to identify trends, discusses key challenges in financial forecasting, and compares traditional statistical models with modern deep learning approaches.</em></p>
 <section id="why-forecast-financial-markets" class="level2">
 <h2 class="anchored" data-anchor-id="why-forecast-financial-markets">Why Forecast Financial Markets?</h2>
 <p>Financial markets generate a large amount of data every day. Stock prices, exchange rates, and interest rates are always changing as a result of economic conditions, company performance, and investor behavior. As these values change over time, they create what is known as time series data. Understanding this type of data is an important step towards making informed financial decisions.</p>
@@ -621,4 +633,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -2,13 +2,13 @@
 title: "Posts"
 listing:
   contents: posts
+  type: grid
   sort: "date desc"
-  type: default
   categories: true
+  fields: [image, title, description, author, date]
+  max-items: 6
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
-
-

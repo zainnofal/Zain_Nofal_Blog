@@ -1,1 +1,112 @@
-/* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --content-width: 860px;
+}
+
+/* Layout */
+#quarto-content, .content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  border-radius: 14px;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 14px;
+}
+
+/* Listing cards */
+.quarto-listing .card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.quarto-listing .card .card-body {
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+}
+
+/* Reduce title-block vertical space */
+.quarto-title-block {
+  padding-bottom: 0.75rem;
+}
+
+
+/* Limit listing card text height */
+.quarto-listing .card-text {
+  max-height: 5.5em;
+  overflow: hidden;
+}
+
+/* Slightly tighter spacing inside cards */
+.quarto-listing .card-body {
+  padding: 1rem 1rem 0.9rem 1rem;
+}
+
+
+/* Make listing cards more square and consistent */
+.quarto-listing .card {
+  max-width: 360px;          /* controls card width */
+  height: 520px;             /* controls card height; adjust 480–560 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cover image area: fixed height, cropped nicely */
+.quarto-listing .card-img-top,
+.quarto-listing img.card-img-top {
+  height: 190px;             /* adjust 170–220 */
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Keep body compact */
+.quarto-listing .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0.75rem 1rem;
+}
+
+/* Clamp title to 3 lines */
+.quarto-listing .card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Clamp description to 3 lines */
+.quarto-listing .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: auto;
+}

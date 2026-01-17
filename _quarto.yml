@@ -5,18 +5,20 @@ project:
 website:
   title: "Zain Nofal | Data Science Blog"
   navbar:
+    left:
+      - text: Posts
+        href: index.qmd
+      - text: About
+        href: about.qmd
     right:
-      - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/zainnofal
+      - icon: linkedin
+        href: https://www.linkedin.com/in/zainnofal/
+
 format:
   html:
-    theme:
-      - Superhero
-      - brand
+    theme: Minty
     css: styles.css
-
-
-
+    toc: false
+    smooth-scroll: true

@@ -2,14 +2,12 @@
 title: "Forecasting Stock Market Trends with Historical Data Using Data Science Models"
 author: "Zain Nofal"
 date: "2026-01-14"
+description: "An accessible introduction to time series forecasting in financial markets, with a high-level comparison of ARIMA and LSTM models."
 categories: [Explanations, Comparisons]
 image: "image.jpg"
 ---
 
 ![](image.jpg)
-
-*This post introduces time series forecasting in financial markets for readers with little prior background in data science. It explains how historical market data can be used to identify trends, discusses key challenges in financial forecasting, and compares traditional statistical models with modern deep learning approaches.*
-
 
 ## Why Forecast Financial Markets?
 
