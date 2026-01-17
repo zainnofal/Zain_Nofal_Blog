@@ -204,13 +204,19 @@ ul.task-list li input[type="checkbox"] {
 <p>From an abstract level, LSTMs attempt to learn which past information is important and which information can be ignored. This makes them well suitable for noisy and complex data such as the financial time series data in our case. LSTMs can model nonlinear relationships and can adapt to the changing patterns that occur.</p>
 <p>However, even LSTMs come with some trade offs. They require larger datasets, more computational power, and are harder to interpret. For someone without a technical background, understanding how an LSTM works can be challenging.</p>
 </section>
+<section id="comparing-arima-and-lstm-for-financial-forecasting" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-arima-and-lstm-for-financial-forecasting">Comparing ARIMA and LSTM for Financial Forecasting</h2>
+<p>ARIMA and LSTM represent two different approaches in time series forecasting. ARIMA relies on the statistical structure and assumptions that are predefined, while LSTMs learn patterns directly from the data.</p>
+<p>ARIMA models are easier to interpret and require less data which makes them suitable for simpler forecasting tasks or where explainability is important. On the other hand, LSTMs offer more flexibility and can capture more complex patterns, but at the cost of transparency and computational efficiency.</p>
+<p>The choice between LSTMs and ARIMA depends on the nature of the data and the final goals of the analysis. In real world applications, analysts usually experiment with multiple models to understand their strengths and weaknesses before selecting one.</p>
+<p><img src="LSTM.png" class="img-fluid"></p>
+<p><em>Figure 3: Conceptual comparison between ARIMA and LSTM models for financial time series forecasting.</em></p>
+</section>
 <section id="evaluating-forecasts" class="level2">
 <h2 class="anchored" data-anchor-id="evaluating-forecasts">Evaluating Forecasts</h2>
 <p>Finally, when evaluating the forecasting models, we can still run into additional challenges. A model that performs really well on the historical data may fail when the market conditions change. This is why financial forecasts are tested using historical backtesting, where models are tested on past data as if the predictions were made in real time.</p>
 <p>Even after careful evaluation, uncertainty can still exist as markets change and strategies that worked before stop working. That is why forecasting models should not be seen as precise methods of prediction, but instead as tools that can help gather uncertainty and support informed decision making.</p>
 <p>For beginners understanding these limitations is important and the forecast accuracy should always be interpreted alongside risk and uncertainty.</p>
-<p><img src="LSTM.png" class="img-fluid"></p>
-<p><em>Figure 3: Conceptual comparison between ARIMA and LSTM models for financial time series forecasting.</em></p>
 </section>
 <section id="conclusion-forecasting-as-a-decision-support-tool" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion-forecasting-as-a-decision-support-tool">Conclusion: Forecasting as a Decision-Support Tool</h2>

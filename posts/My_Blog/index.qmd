@@ -59,6 +59,17 @@ From an abstract level, LSTMs attempt to learn which past information is importa
 
 However, even LSTMs come with some trade offs. They require larger datasets, more computational power, and are harder to interpret. For someone without a technical background, understanding how an LSTM works can be challenging.
 
+## Comparing ARIMA and LSTM for Financial Forecasting
+
+ARIMA and LSTM represent two different approaches in time series forecasting. ARIMA relies on the statistical structure and assumptions that are predefined, while LSTMs learn patterns directly from the data. 
+
+ARIMA models are easier to interpret and require less data which makes them suitable for simpler forecasting tasks or where explainability is important. On the other hand, LSTMs offer more flexibility and can capture more complex patterns, but at the cost of transparency and computational efficiency.
+
+The choice between LSTMs and ARIMA depends on the nature of the data and the final goals of the analysis. In real world applications, analysts usually experiment with multiple models to understand their strengths and weaknesses before selecting one.
+
+![](LSTM.png)
+
+*Figure 3: Conceptual comparison between ARIMA and LSTM models for financial time series forecasting.*
 
 ## Evaluating Forecasts
 
@@ -67,10 +78,6 @@ Finally, when evaluating the forecasting models, we can still run into additiona
 Even after careful evaluation, uncertainty can still exist as markets change and strategies that worked before stop working. That is why forecasting models should not be seen as precise methods of prediction, but instead as tools that can help gather uncertainty and support informed decision making.
 
 For beginners understanding these limitations is important and the forecast accuracy should always be interpreted alongside risk and uncertainty.
-
-![](LSTM.png)
-
-*Figure 3: Conceptual comparison between ARIMA and LSTM models for financial time series forecasting.*
 
 ## Conclusion: Forecasting as a Decision-Support Tool
 
